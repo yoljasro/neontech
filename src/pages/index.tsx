@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.sass";
 import { Navbar } from "@/components/Navbar";
 import { Header } from "@/components/Header";
+import { Brands } from "@/components/Brands";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
         <Navbar/>
         <Header/>
+        <Brands/>
       </main>
     </>
   );
