@@ -29,10 +29,10 @@ export const Services = () => {
                     <p className={styles.services__name}>Design services</p>
                     <p className={styles.services__subTitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
                     <p className={styles.services__learn}> Learn more</p>
-            <button className={styles.services__btn}>Explore our services   <GrLinkNext className={styles.services__icon} /></button>
 
                 </div>
             </div>
+            <button className={styles.services__btn}>Explore our services   <GrLinkNext className={styles.services__icon} /></button>
         </div>
     );
 };
