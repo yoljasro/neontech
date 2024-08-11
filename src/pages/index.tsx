@@ -7,6 +7,7 @@ import { Header } from "@/components/Header";
 import { Brands } from "@/components/Brands";
 import { Services } from "@/components/Services";
 import { Projects } from "@/components/Projects";
+import { Footer } from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +26,7 @@ export default function Home() {
         <Brands/>
         <Services/>
         <Projects/>
-        
+        <Footer/>
       </main>
     </>
   );
