@@ -1,0 +1,75 @@
+.work
+    display: flex
+    flex-direction: column
+    margin-top: 88px
+    gap: 180px
+    justify-content: center
+    align-content: center
+    align-items: center
+
+    &__cont
+        width: 100%
+        display: flex
+        gap: 35px
+        justify-content: center
+        // flex-wrap: wrap
+
+    &__text
+        display: flex
+        flex-direction: column
+        gap: 40px
+
+    &__title
+        color: #008080
+        font-size: 32px
+        font-family: font-medium
+        padding-top: 118px
+
+    &__desc
+        width: 100%
+        max-width: 571px
+        color: #0F0F0F
+        font-size: 20px
+        font-family: font-medium
+
+    &__img
+        width: 100%
+        max-width: 520px
+        height: 594px
+        background-image: url("/assets/img/ui.png")
+        background-size: cover
+        background-repeat: no-repeat
+        &:nth-child(1)
+            background-image: url("/assets/img/marketing.png")
+        // &:nth-child(3)
+        //     background-image: url("/assets/img/design.png")
+        // &:nth-child(1)
+        //     background-image: url("/assets/img/development.png")
+        // &:nth-child(4)
+        //     background-image: url("/assets/img/ui.png")
+        // &:last-child
+        //     background-image: url("/assets/img/development.png")
+
+    &__list
+        display: flex
+        gap: 24px
+
+    &__types
+        display: flex
+        flex-direction: column
+        gap: 20px
+        list-style: none
+        & li
+            color: #008080
+            font-size: 16px
+            font-family: font-medium
+
+    &__section
+        display: flex
+        gap: 16px
+
+    &__line
+        width: 16px
+        height: 3px
+        background: #967D69
+        margin-top: 8px
