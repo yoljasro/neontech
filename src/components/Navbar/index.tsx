@@ -21,8 +21,9 @@ export const Navbar = () => {
             </ul>
             <Link href={'/contact'}>
             <button className={styles.navbar__btn}>Contact us  <GrLinkNext className={styles.navbar__icon} />
-            </Link>
             </button>
+            </Link>
+
         </div>
     );
 };

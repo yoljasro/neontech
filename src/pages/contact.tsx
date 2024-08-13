@@ -4,10 +4,12 @@ import Image from 'next/image';
 import { GrLinkNext } from "react-icons/gr";
 import Link from 'next/link';
 
-export const Contact = () => {
+ const Contact = () => {
     return (
         <div className={styles.contact}>
             <p className={styles.contact__title}>Interested? <br /> Let’s talk!</p>
         </div>
     );
 };
+
+export default Contact
