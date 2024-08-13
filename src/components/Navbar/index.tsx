@@ -19,7 +19,9 @@ export const Navbar = () => {
                     <li>Services</li>
                 </Link>
             </ul>
+            <Link href={'/contact'}>
             <button className={styles.navbar__btn}>Contact us  <GrLinkNext className={styles.navbar__icon} />
+            </Link>
             </button>
         </div>
     );
