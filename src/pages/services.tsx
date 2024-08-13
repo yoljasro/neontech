@@ -1,0 +1,13 @@
+import React from 'react'
+import styles from '../styles/services.module.sass'
+
+const Services = () => {
+  return (
+    <div className={styles.services}>
+        <p className={styles.services__title}>OUR SERVICES</p>
+        <p className={styles.services__desc}>From proof of concepts and to complex systems of an enterprise-level – we’ve got everything covered.</p>
+    </div>
+  )
+}
+
+export default Services
