@@ -2,45 +2,47 @@
     width: 100%
     height: 92px
     display: flex
-    gap: 206px
     justify-content: space-between
-    padding-right: 188px
-    padding-left: 146px 
-    @media (min-width: 769px)
-        flex-direction: row
-        // height: 96px
-        padding-top: 29px
-        padding-bottom: 0
+    padding: 0 30px
+    box-sizing: border-box
 
-    @media (max-width:769px)
-        padding-left: 30px
-        gap: 180px
+    @media (min-width: 769px)
+        gap: 206px
+        padding-right: 188px
+        padding-left: 146px
+        flex-direction: row
 
     &__logo
         margin-top: 27px
 
     &__toggle
-        display: block
+        display: none
         font-size: 40px
         cursor: pointer
         background: none
         border: none
         color: black
-        text-align: center
-        padding-right: 50px
 
-        @media (min-width: 769px)
-            display: none
+        @media (max-width: 768px)
+            display: block
+            padding: 0
+            margin-top: 20px
+            padding-left: 20px
 
     &__item
         display: flex
         flex-direction: column
         align-items: center
-        justify-content: flex-start
         width: 100%
         max-height: 0
         overflow: hidden
         transition: max-height 0.3s ease-in-out
+        background: white
+        position: absolute
+        top: 92px
+        left: 0
+        padding: 20px
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
 
         @media (min-width: 769px)
             flex-direction: row
@@ -48,7 +50,11 @@
             justify-content: flex-end
             width: auto
             max-height: none
-            overflow: hidden
+            overflow: visible
+            position: static
+            background: none
+            padding: 0
+            box-shadow: none
 
     &__item_open
         max-height: 1000px
@@ -59,7 +65,7 @@
     &__menu
         display: flex
         list-style: none
-        gap: 60px
+        gap: 20px
         padding-top: 36px
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
         color: #967D69
@@ -69,7 +75,6 @@
         @media (min-width: 769px)
             flex-direction: row
             padding-right: 60px
-            // gap: 5px
             width: auto
 
         & li
@@ -77,7 +82,7 @@
 
     &__btn
         background: #008080
-        padding: 12px 24px 12px 24px
+        padding: 12px 24px
         border: none
         color: #F5F5F5
         width: 100%
@@ -88,6 +93,11 @@
         font-family: font-medium
         display: flex
         cursor: pointer
+        justify-content: center
+        align-items: center
+
+        @media (max-width: 768px)
+            margin-top: 20px
 
     &__icon
         color: #F5F5F5
