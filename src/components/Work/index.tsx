@@ -1,11 +1,7 @@
 import React from 'react';
 import styles from './index.module.sass';
-import Image from 'next/image';
-import { GrLinkNext } from "react-icons/gr";
-import Link from 'next/link';
 
 export const Work = () => {
-
     return (
         <div className={styles.work}>
             <div className={styles.work__cont}>
@@ -44,10 +40,9 @@ export const Work = () => {
                     </div>
                 </div>
                 <div className={styles.work__img}></div>
-
             </div>
             <div className={styles.work__cont}>
-            <div className={styles.work__img}></div>
+                <div className={styles.work__img}></div>
                 <div className={styles.work__text}>
                     <p className={styles.work__title}>Marketing services</p>
                     <p className={styles.work__desc}>Reality is a new reality. With a well-built digital strategy we leverage this stellar tech to propel your brand forward.</p>
@@ -83,8 +78,6 @@ export const Work = () => {
                     </div>
                 </div>
             </div>
-
-
             <div className={styles.work__cont}>
                 <div className={styles.work__text}>
                     <p className={styles.work__title}>Design services</p>
@@ -111,7 +104,7 @@ export const Work = () => {
                             </div>
                             <div className={styles.work__section}>
                                 <div className={styles.work__line}></div>
-                                <li> Graphic print design   </li>
+                                <li> Graphic print design</li>
                             </div>
                             <div className={styles.work__section}>
                                 <div className={styles.work__line}></div>
@@ -121,12 +114,9 @@ export const Work = () => {
                     </div>
                 </div>
                 <div className={styles.work__img}></div>
-
             </div>
-
-
             <div className={styles.work__cont}>
-            <div className={styles.work__img}></div>
+                <div className={styles.work__img}></div>
                 <div className={styles.work__text}>
                     <p className={styles.work__title}>Development services</p>
                     <p className={styles.work__desc}>Together, we define, develop, and deliver different design solutions that create an unparalleled competitive advantage for Web3 companies in a sea of competition.</p>
@@ -154,9 +144,6 @@ export const Work = () => {
                     </div>
                 </div>
             </div>
-            
-
-            
         </div>
     );
 };

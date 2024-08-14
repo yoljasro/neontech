@@ -50,6 +50,57 @@
         display: flex
         gap: 8px
         border: 1px solid #008080
-        margin-top: 200px
-        float: left
         margin-top: 108px
+
+// Mobil ekranlar uchun (768px va kichikroq)
+@media (max-width: 768px)
+    .project
+        margin-top: 50px
+        padding-left: 20px
+        padding-right: 20px
+
+    .project__desc
+        font-size: 24px
+        text-align: center
+
+    .project__cards
+        gap: 20px
+        flex-direction: column
+        align-items: center
+        padding-right: 0
+
+    .project__card
+        align-items: center
+
+    .project__name
+        font-size: 24px
+        text-align: center
+
+    .project__btn
+        margin-top: 50px
+        margin-left: 0
+        align-self: center
+
+// O'rta ekranlar uchun (769px - 1199px)
+@media (min-width: 769px) and (max-width: 1199px)
+    .project
+        padding-left: 50px
+        padding-right: 50px
+
+    .project__desc
+        font-size: 32px
+
+    .project__cards
+        gap: 20px
+        padding-right: 50px
+
+    .project__card
+        gap: 16px
+
+    .project__name
+        font-size: 28px
+
+    .project__btn
+        margin-top: 100px
+        margin-left: auto
+        margin-right: auto

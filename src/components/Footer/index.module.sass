@@ -33,7 +33,6 @@
 
     &__btn
         background: #008080
-        // padding: 20px 49px 20px 49px
         border: none
         color: #F5F5F5
         width: 100%
@@ -58,6 +57,7 @@
         list-style: none
         gap: 60px
         padding-top: 29px
+        font-family: font-medium
 
     &__socials
         display: flex
@@ -69,3 +69,79 @@
         padding-right: 185px
         width: 100%
 
+// Mobil ekranlar uchun (768px va kichikroq)
+@media (max-width: 768px)
+    .footer
+        margin-top: 40px
+
+    .footer__section
+        height: 200px
+
+    .footer__container
+        height: auto
+        padding: 20px
+        padding-top: 40px
+
+    .footer__title
+        font-size: 36px
+        padding-top: 20px
+
+    .footer__btn
+        margin-top: 40px
+        width: 100%
+        max-width: 200px
+        height: 50px
+        font-size: 18px
+
+    .footer__content
+        margin-top: 100px
+        flex-direction: column
+        align-items: center
+        padding-left: 20px
+        padding-right: 20px
+
+    .footer__menu
+        flex-direction: column
+        align-items: center
+        gap: 20px
+        padding-top: 20px
+
+    .footer__socials
+        justify-content: center
+        padding-right: 0
+        margin-top: 40px
+
+// O'rta ekranlar uchun (769px - 1199px)
+@media (min-width: 769px) and (max-width: 1199px)
+    .footer__section
+        height: 300px
+
+    .footer__container
+        height: auto
+        padding: 50px
+
+    .footer__title
+        font-size: 48px
+        padding-top: 30px
+
+    .footer__btn
+        margin-top: 60px
+        width: 100%
+        max-width: 220px
+        height: 60px
+        font-size: 20px
+
+    .footer__content
+        margin-top: 150px
+        flex-direction: row
+        padding-left: 50px
+        padding-right: 50px
+
+    .footer__menu
+        gap: 40px
+        padding-top: 25px
+
+    .footer__socials
+        justify-content: flex-end
+        padding-right: 50px
+        margin-top: 40px
