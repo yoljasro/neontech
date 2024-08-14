@@ -27,4 +27,56 @@
     &__contentimg
         margin-top: 19px
 
-    
+// Mobil ekranlar uchun (768px va kichikroq)
+@media (max-width: 768px)
+    .header
+        margin-top: 80px
+
+    .header__content
+        flex-direction: column
+        gap: 40px
+        align-items: center
+
+    .header__btn
+        max-width: 100%
+        width: 80%
+        height: 50px
+        font-size: 13px
+        padding: 13px 24px
+
+    .header__img
+        width: 100%
+        height: auto
+        max-width: 320px
+
+    .header__icon
+        display: none
+
+    .header__contentimg
+        width: 100%
+        max-width: 200px
+        height: auto
+
+// Katta ekranlar uchun (1200px va kattaroq)
+@media (min-width: 1200px)
+    .header
+        margin-top: 200px
+
+    .header__content
+        gap: 120px
+
+    .header__btn
+        max-width: 300px
+        height: 70px
+        font-size: 16px
+        padding: 24px 36px
+
+    .header__img
+        width: 100%
+        height: auto
+        max-width: 720px
+
+    .header__contentimg
+        width: 100%
+        max-width: 240px
+        height: auto
