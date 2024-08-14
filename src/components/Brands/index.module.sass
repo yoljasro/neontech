@@ -22,9 +22,6 @@
         margin-top: 42px
         gap: 20px
 
-        @media (max-width: 769px)
-            gap: 20px
-
     &__slideone,
     &__slidetwo
         width: 100%
@@ -39,14 +36,9 @@
         background-image: url('/assets/img/logoline.svg')
         animation: slideoneAnimation 10s linear infinite
 
-    &
-        animation-duration: 22s
-
     &__slidetwo
         background-image: url('/assets/img/brandlogotwo.png')
         animation: slidetwoAnimation 10s linear infinite
-    &
-        animation-duration: 22s
 
     @keyframes slideoneAnimation
         0%
@@ -61,3 +53,42 @@
 
         100%
             background-position: 0 0
+
+// Mobil ekranlar uchun (768px va kichikroq)
+@media (max-width: 768px)
+    .brand
+        padding-top: 60px
+        margin-top: 60px
+
+    .brand__title
+        font-size: 24px
+        max-width: 100%
+        padding: 0 16px
+
+    .brand__carousel
+        margin-top: 32px
+        gap: 12px
+
+    .brand__slideone,
+    .brand__slidetwo
+        height: 50px
+        background-size: cover
+
+// Katta ekranlar uchun (1200px va kattaroq)
+@media (min-width: 1200px)
+    .brand
+        padding-top: 100px
+        margin-top: 120px
+
+    .brand__title
+        font-size: 48px
+        max-width: 1000px
+
+    .brand__carousel
+        margin-top: 50px
+        gap: 24px
+
+    .brand__slideone,
+    .brand__slidetwo
+        height: 90px
+        background-size: contain

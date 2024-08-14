@@ -19,7 +19,6 @@
     &__cards
         display: flex
         gap: 245px
-        // justify-content: center
         align-content: center
         align-items: center
         margin-top: 88px
@@ -59,3 +58,60 @@
         margin-top: 200px
         float: left
         margin-left: 1150px
+
+// Mobil ekranlar uchun (768px va kichikroq)
+@media (max-width: 768px)
+    .services
+        margin-top: 50px
+        padding-top: 50px
+        padding-left: 20px
+        padding-right: 20px
+        justify-content: center
+        align-content: center
+        align-items: center
+        text-align: center
+        
+    .services__desc
+        font-size: 24px
+        text-align: center
+
+    .services__cards
+        flex-direction: column
+        width: 100%
+        gap: 40px
+        justify-content: center
+        align-items: center
+        align-items: center
+        margin-top: 50px
+
+    .services__name
+        font-size: 24px
+
+    .services__subTitle
+        max-width: 100%
+        font-size: 14px
+
+    .services__btn
+        margin-top: 100px
+        margin-left: 0
+        align-self: center
+
+// O'rta ekranlar uchun (769px - 1199px)
+@media (min-width: 769px) and (max-width: 1199px)
+    .services
+        padding-left: 50px
+        padding-right: 50px
+
+    .services__desc
+        font-size: 32px
+
+    .services__cards
+        gap: 120px
+
+    .services__name
+        font-size: 28px
+
+    .services__btn
+        margin-top: 150px
+        margin-left: auto
+        margin-right: auto
