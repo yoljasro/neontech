@@ -5,7 +5,7 @@ import { GrLinkNext } from "react-icons/gr";
 
 export const Projects = () => {
     return (
-        <div className={styles.project}>
+        <div className={styles.project} id='projects'>
              <p className={styles.project__title}>PROJECTS</p>
             <p className={styles.project__desc}>We guide game-changing companies, across platforms & places, through agile design & digital experience. </p>
             <div className={styles.project__cards}>

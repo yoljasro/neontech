@@ -21,9 +21,14 @@ export const Navbar = () => {
             </button>
             <div className={`${styles.navbar__item} ${menuOpen ? styles.navbar__item_open : ''}`}>
                 <ul className={styles.navbar__menu}>
-                    <li>Home</li>
+                    <Link href={'/'}>
+                        <li>Home</li>
+                    </Link>
+
                     <li>About us</li>
+                    <Link href={'#projects'}>
                     <li>Projects</li>
+                    </Link>
                     <Link href={'/services'}>
                         <li>Services</li>
                     </Link>
