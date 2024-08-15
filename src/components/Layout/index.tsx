@@ -10,7 +10,7 @@ import { useTranslations } from "next-intl";
 import { useRouter } from "next/router";
 // styles
 import { Footer } from "../Footer";
-import { Navbar } from "../Navbar";
+import  {Navbar}  from "../Navbar";
 
 export const Layout: FC<any> = ({children}) => {
 
